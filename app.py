@@ -6,12 +6,12 @@ import os
 import re
 
 defaultadmin ='admin'
-defaultpass = 'admin123'
+defaultpass = 'ax7WctZWNc%*Usy9GfpMvTcQe&YifLw*o6L2#vCuW$2E@GmNk&!hT#xdA%h^AADT'
 
 app = Flask(__name__)
 app.jinja_env.filters['zip'] = zip
 # 请将 xxx 替换为随机字符
-app.config['SECRET_KEY'] = os.environ.get('random_key','c2jf932hibfiuebvwievubheriuvberv')
+app.config['SECRET_KEY'] = os.environ.get('random_key','j4fq5b9wimc6go9q99c5dbz2tdzng8bv')
 
 
 DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///flask_app.db')
